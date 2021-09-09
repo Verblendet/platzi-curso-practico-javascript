@@ -7,10 +7,118 @@
     <title>Figuras geométricas | Curso Práctico de JavaScript</title>
 </head>
 <body>
-    <h1>
-        Figuras geométricas
-    </h1>
+
+    <header>
+
+        <h1>
+            Figuras geométricas
+        </h1>
+
+        <p>Este es el primer taller del curso práctico de JavaScript</p>
+
+    </header>
+
+    <section>
+
+        <h2>Calcula el área y perímetro de un cuadrado</h2>
+
+        <form>
+            <label for="InputCuadrado">
+                Escribe cuánto mide cada lado de tu cuadrado: 
+            </label>
+            <input id="InputCuadrado" type="number" />
+
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+                Calcular el perímetro
+            </button>
+
+            <button type="button" onclick="calcularAreaCuadrado()">
+                Calcular el área
+            </button>
+
+        </form>
+
+    </section>
+
+    <section>
+
+        <h2>Calcula la altura, el perímetro y área de un triángulo isósceles</h2>
+
+        <p>Lados A y B deben ser iguales.</p>
+
+        <form>
+
+            <label for="InputTriangulo">
+                Escribe cuánto mide el lado A del triángulo:
+            </label>
+            <input id="ladoA" type="number" />
+
+            <label for="InputTriangulo">
+                Escribe cuánto mide el lado B del triángulo:
+            </label>
+            <input id="ladoB" type="number" />
+
+            <label for="InputTriangulo">
+                Escribe cuánto mide la base del triángulo:
+            </label>
+            <input id="base" type="number" />
+
+            <label for="InputTriangulo">
+                Escribe cuánto mide la altura del triángulo:
+            </label>
+            <input id="altura" type="number" />
+
+            <button type="button" onclick="alturaButton()">
+                Calcular la altura del triángulo
+            </button>
+
+            <button type="button" onclick="calcPerimetroTriangulo()">
+                Calcular el perímetro del triángulo
+            </button>
+
+            <button type="button" onclick="calcAreaTriangulo()">
+                Calcular el área del triángulo
+            </button>
+
+            <p id="alturaT"></p>
+            <p id="perimetroT"></p>
+            <p id="areaT"></p>
+
+        </form>
+
+    </section>
+
+    <section>
+
+        <h2>Calcula el diámetro de un círculo</h2>
+
+        <form>
+            <label for="InputCirculo">
+                Escribe cuánto mide el radio del círculo: 
+            </label>
+            <input id="radioCirculo" type="number" />
+
+            <button type="button" onclick="calcularDiametroCirculo()">
+                Calcular el diámetro
+            </button>
+
+            <button type="button" onclick="calcularPerimetroCirculo()">
+                Calcular el perímetro
+            </button>
+
+            <button type="button" onclick="calcularAreaCirculo()">
+                Calcular el área
+            </button>
+
+            <p id="diametroC"></p>
+            <p id="perimetroC"></p>
+            <p id="areaC"></p>
+
+        </form>
+
+    </section>
 
     <script src="./figuras.js"></script>
+
 </body>
 </html>
